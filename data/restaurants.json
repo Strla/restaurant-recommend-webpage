@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Mamma Mia",
+    "address": "Street 5, City",
+    "cuisine": "Italian",
+    "website": "https://mamma.mia",
+    "description": "Awesome!"
+  },
+  {
+    "name": "Big Brotha",
+    "address": "Test 8, Citys",
+    "cuisine": "Mexican",
+    "website": "https://mybb.com",
+    "description": "Tasty!"
+  },
+  {
+    "name": "Third res",
+    "address": "Awesome Street, Mycity",
+    "cuisine": "German",
+    "website": "https://awesome.com",
+    "description": "It's amazing!!!"
+  }
+]
