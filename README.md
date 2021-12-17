@@ -6,3 +6,4 @@ To start the project you need to:
  2. Open cloned project in VSCode (or some other IDE)
  3. Open terminal inside project directory and run *npm install* or *yarn install*
  4. Start the project with *npm start* or *yarn start*
+ 5. Go to **localhost:3000** in browser
