@@ -1,4 +1,3 @@
-const { randomUUID } = require("crypto");
 const express = require("express");
 const app = express();
 const uuid = require("uuid");
@@ -41,7 +40,7 @@ app.get("/restaurants/:id", (req, res) => {
     }
   }
 
-  res.render("404");
+  res.status(404).render("404");
 });
 
 app.get("/recommend", (req, res) => {
@@ -69,6 +68,14 @@ app.get("/confirm", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.render("about");
+});
+
+app.use((req, res) => {
+  res.status(404).render("404");
+});
+
+app.use((error, req, res, next) => {
+  res.status(500).render("500");
 });
 
 app.listen(3000);
