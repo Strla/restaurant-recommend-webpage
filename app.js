@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const open = require("open");
 
 const defaultRoutes = require("./routes/default");
 const restaurantRoutes = require("./routes/restaurants");
@@ -23,3 +24,4 @@ app.use((error, req, res, next) => {
 });
 
 app.listen(3000);
+open("http://localhost:3000/");
